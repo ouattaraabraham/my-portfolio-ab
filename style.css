@@ -151,13 +151,13 @@ main{
     padding: 0 10px;
 
 }
-.container{
+.section-presentation .container{
     display: flex;
     background-color: #cad0d9;
     color: #0a192f;
     flex-direction: column;
     align-items: center;
-   width: 50%;
+    width: 50%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 7px;
@@ -166,7 +166,7 @@ main{
     
    
 }
-.container .presentation-text{
+.section-presentation .container .presentation-text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,13 +174,13 @@ main{
    padding: 6px 0;
 
 }
-.container h3{
+.section-presentation .container h3{
     position: relative;
     display: flex;
     align-items: center;
 
 }
-.container h3::before{
+.section-presentation .container h3::before{
     content: '';
     display: block;
     width: 130px;
@@ -188,7 +188,7 @@ main{
     background-color: aliceblue;
 
 }
-.container h3::after{
+.section-presentation .container h3::after{
     content: '';
     display: block;
     width: 130px;
@@ -213,8 +213,14 @@ main{
 .presentation-text{
     font-weight: 600;
 }
+.section-apropos .div-text h2{
+    padding-bottom: 25px;
+}
 .section-apropos .div-text div p{
     line-height: 2;
+}
+.section-apropos .div-text div .link-contacter{
+    padding-top: 10px;
 }
 .div-competence{
    margin: 20px auto;
@@ -234,15 +240,40 @@ main{
     display: inline-block;
     font-size: clamp(10px,3vw,18px);;
 }
-.section-projet .container{
-    position: relative;
-    width: 100%;
-    display: flex;
+.section-mon-travail{
+    padding: 100px 0;
 }
-.section-projet .container img{
-    width: 100%;
-    height: auto;
+.section-mon-travail .wrap{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   
 }
+.section-mon-travail .wrap .text h2{
+    padding-bottom: 21px;
+   
+}
+.section-mon-travail .wrap .text p{
+    line-height: 1.7;
+}
+.section-mon-travail .wrap .div-img img{
+  
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: aliceblue;
+
+}
+
+/*
+.img{
+    max-width: 540px;
+    width: 100%;
+    height: 100%;
+    max-height: 405px;
+}  */
+
+
 
 @media (max-width:768px) {
     header .nav-link ul{
@@ -260,12 +291,30 @@ main{
         padding: 50px 5px;
     }
 
-    .container{
-        width: 90%;
+    .section-presentation .container{
+        width: 80%;
+    }
+    .section-mon-travail .wrap{
+        display: block;
+    }
+   
+    .section-mon-travail{
+        padding: 80px 0;
+    }
+    .section-mon-travail .wrap .div-img{
+        width: 100%;
+        padding: 5px;
+        margin: 50px auto;
+        border-radius: 8px;
+        background-color: aliceblue;
     }
 }
 @media (max-width:480px){
   body{
-    font-size: 18px;
+   
   }
+  
+  .section-mon-travail{
+    padding: 50px 0;
+}
 }
