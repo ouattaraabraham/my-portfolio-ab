@@ -243,12 +243,16 @@ main{
 .section-mon-travail{
     padding: 100px 0;
 }
+.section-mon-travail .div-mon-travail{
+    margin-bottom: 70px;
+}
 .section-mon-travail .wrap{
     display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 20px;
    
 }
+
 .section-mon-travail .wrap .text h2{
     padding-bottom: 21px;
    
@@ -256,12 +260,9 @@ main{
 .section-mon-travail .wrap .text p{
     line-height: 1.7;
 }
-.section-mon-travail .wrap .div-img img{
-  
-    width: 100%;
-    padding: 5px;
-    border-radius: 8px;
-    background-color: aliceblue;
+.div-img img{
+   width: 100%;
+   border-radius: 7px;
 
 }
 
@@ -301,16 +302,25 @@ main{
     .section-mon-travail{
         padding: 80px 0;
     }
-    .section-mon-travail .wrap .div-img{
-        width: 100%;
-        padding: 5px;
-        margin: 50px auto;
-        border-radius: 8px;
-        background-color: aliceblue;
+    .section-mon-travail .wrap .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-mon-travail .wrap .text p{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .div-img{
+        width: 90%;
+        padding: 10px; 
+       margin: auto;
+       
     }
 }
 @media (max-width:480px){
   body{
+    
    
   }
   
