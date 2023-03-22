@@ -248,8 +248,8 @@ main{
 }
 .section-mon-travail .wrap{
     display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 20px;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2rem;
    
 }
 
@@ -265,15 +265,32 @@ main{
    border-radius: 7px;
 
 }
+.me-contacter{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-/*
-.img{
-    max-width: 540px;
-    width: 100%;
-    height: 100%;
-    max-height: 405px;
-}  */
-
+.me-contacter .text{
+  
+}
+.me-contacter .text h2{
+   
+}
+.me-contacter .text p{
+    margin: 20px 0 49px;
+    font-size: clamp(16px,3vw,18px);
+}
+.me-contacter .contact{
+    padding-bottom: 10px;
+}
+.me-contacter .contact .whatsap{
+    padding: 20px 0;
+}
+footer{
+    background-color: #27292b;
+   
+}
 
 
 @media (max-width:768px) {
@@ -296,8 +313,9 @@ main{
         width: 80%;
     }
     .section-mon-travail .wrap{
-        display: block;
+        grid-template-columns: repeat(1,1fr);
     }
+   
    
     .section-mon-travail{
         padding: 80px 0;
@@ -312,8 +330,7 @@ main{
         line-height: 1.4;
     }
     .div-img{
-        width: 90%;
-        padding: 10px; 
+        padding: 5px; 
        margin: auto;
        
     }
