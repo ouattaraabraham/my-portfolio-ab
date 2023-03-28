@@ -21,7 +21,6 @@
 }
 
 body{
-    /*background-image: url('/assets/img-espace.jpg');*/
     background-color: var(--background-color) ;
     width: 100%;
     min-width: 100%;
@@ -161,10 +160,6 @@ main{
 }
 .section-presentation .container{
     display: flex;
-    /*
-    background-color: #cad0d9;
-    color: #0a192f;
-    */
     flex-direction: column;
     align-items: center;
     width: 45%;
