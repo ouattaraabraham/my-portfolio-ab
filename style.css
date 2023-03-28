@@ -136,7 +136,7 @@ header .nav-link ul li{
 .section-profile{
     position: relative;
     width: 100%;
-    background-image: url('/assets/img-ia.jpg');
+    background-image: url('assets/img-ia.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover ;
