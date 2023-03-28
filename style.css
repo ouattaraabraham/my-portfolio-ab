@@ -281,22 +281,31 @@ main{
    border-radius: 7px;
 
 }
-.me-contacter{
+.section-contacter{
     max-width: 600px;
     padding: 5rem 0;
     margin: 0 auto;
     text-align: center;
 }
 
-.me-contacter .text p{
+.section-contacter .text p{
     margin: 20px 0 49px;
     font-size: clamp(16px,3vw,18px);
 }
-.me-contacter .contact{
+.section-contacter .div-contact{
     padding-bottom: 10px;
-    font-size: clamp(12px,5vw,24px);
+    font-size: clamp(8px,5vw,24px);
 }
-.me-contacter .contact .whatsap{
+.section-contacter .div-contact img{
+    position: relative;
+    animation: pointe 1s infinite ;
+}
+@keyframes pointe{
+    from{top:-3px}
+    to{top:0px}
+    
+}
+.section-contacter .div-contact .whatsap{
     padding: 20px 0;
     color: var(--color-green);
 }
@@ -310,6 +319,9 @@ main{
 footer{
     background-color: #27292b;
    
+}
+footer .div{
+    font-size: clamp(8px,5vw,20px);
 }
 
 
