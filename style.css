@@ -169,7 +169,7 @@ main{
     border-radius: 7px;
     padding: 20px 0;
     font-size: clamp(16px,3vw,26px);
-    box-shadow: 1px 1px 10px #33E7F5;
+    box-shadow: 1px 1px 5px #33E7F5;
     
    
 }
@@ -178,14 +178,14 @@ main{
     flex-direction: column;
     align-items: center;
    line-height: 2.3;
-   padding: 6px 0;
+   padding: 15px 0;
 
 }
 .section-presentation .container h3{
     position: relative;
     display: flex;
     align-items: center;
-    padding-bottom: 18px;
+  
 
 }
 .section-presentation .container h3::before{
@@ -215,6 +215,7 @@ main{
     padding: 0.8rem 2.4rem;
     font-weight: 600;
     background-color:var(--color-boutton);
+    color: var(--color-text2);
     border-radius: 7px;
     transition:top .3s;
 }
@@ -300,8 +301,8 @@ main{
     color: var(--color-green);
 }
 .link{
-    color: var(--color-boutton);
-    font-weight: 700;
+    color: var(--color-text2);
+    
 }
 .link:hover{
     font-weight: 900;
@@ -362,6 +363,9 @@ footer{
     font-size: 18px;
     
    
+  }
+  .section-apropos .div-text .link-contacter .btn{
+    padding: 0.6rem 1.9rem;
   }
   .div-competence {
     margin: 3rem auto;
