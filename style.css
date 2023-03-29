@@ -45,25 +45,33 @@ a{
 
 
 header{
-    background: rgba(62, 68, 78, 0.85) ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 15;
+    background: rgba(62, 68, 78, 0.85);
 
 }
 .links{
     color: var(--color-text2);
-    font-weight: 600;
+    font-weight: bold;
 }
 .links:hover{
     color: var(--color-boutton);
 }
 header .nav-link{
     position: relative;
-    width: 100%;
-    height: 65px;
 
+    /*
+    width: 100%;
+    height: 65px;  
+    */
+
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 40px ;
+    padding: 1.6rem 2.8rem;
 }
 header .nav-link ul{
   display: flex;
@@ -91,11 +99,9 @@ header .nav-link ul li{
     z-index: 10;
     top:0;
     right: 0;
-    width: min(75%,400px);
+    width: min(76%,400px);
     height: 100vh;
     background-color: var(--background-color-menu);
-    padding: 50px 10px;
-    box-shadow: -10px 0px 30px -15px;
     transform: translateX(500%);
     transition: var(--transition) ;
 }
@@ -108,9 +114,11 @@ header .nav-link ul li{
     align-items: center;
     
 }
+.menu .div-links {
+    padding: 100px 0;
+}
 .menu .div-links li ,.menu .links div{
     padding: 20px 0;
-    font-size: 1.6rem;
     
     
 }
@@ -121,13 +129,13 @@ header .nav-link ul li{
 .div-click{
     display: none;
     position: absolute;
-    background-color: rgb(251, 248, 248);
+    background-color: rgb(21, 21, 21);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     right: 0;
-    opacity: .5;
-    z-index: 8;
+    opacity: .7;
+    z-index: 9;
 }
 .div-active{
     display: block;
@@ -136,16 +144,19 @@ header .nav-link ul li{
 .section-profile{
     position: relative;
     width: 100%;
+    height: auto;
     background-image: url('assets/img-ia.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover ;
+    margin-top: 78px;
 }
 
 .section-profile .profile{
     position: relative;
     display: flex;
-    justify-content: center;
+    /*
+    justify-content: center; */
    
 }  
 .section-profile .profile img{
@@ -162,12 +173,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: clamp(210px,45VW,401px);
     margin: 20px auto;
     overflow: hidden;
     border: 1px solid#33E7F5;
     border-radius: 7px;
-    padding: 20px 0;
+    padding: 10px 0;
+    font-style: italic;
     font-size: clamp(16px,3vw,26px);
     box-shadow: 1px 1px 5px #33E7F5;
     
@@ -178,16 +190,17 @@ main{
     flex-direction: column;
     align-items: center;
    line-height: 2.3;
-   padding: 15px 0;
 
 }
 .section-presentation .container h3{
     position: relative;
-    display: flex;
-    align-items: center;
+    text-decoration: underline;
+     /* display: flex;
+    align-items: center; */
   
 
 }
+/*
 .section-presentation .container h3::before{
     content: '';
     display: block;
@@ -203,7 +216,8 @@ main{
     height: 1px;
     background-color: aliceblue;
 
-}
+}  
+*/
 .section-apropos{
     padding: 50px 30px;
 }
@@ -215,7 +229,7 @@ main{
     padding: 0.8rem 2.4rem;
     font-weight: 600;
     background-color:var(--color-boutton);
-    color: var(--color-text2);
+    color: #060e25;
     border-radius: 7px;
     transition:top .3s;
 }
@@ -235,14 +249,21 @@ main{
 .section-apropos .div-text div .link-contacter{
     padding-top: 10px;
 }
-.div-competence{
+.section-apropos .div-competence{
    margin: 5rem auto;
 
 }
-.div-competence h3{
+.section-apropos .div-competence h3{
     padding: 20px 0;
 }
-.div-competence .outils div {
+.section-apropos .div-competence h3::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-green);
+
+}
+.section-apropos .div-competence .outils div {
     padding: 0.5rem 0.8rem;
     margin-bottom: 1.2rem;
     margin-right: 1.5rem;
@@ -320,12 +341,16 @@ footer{
     background-color: #27292b;
    
 }
-footer .div{
-    font-size: clamp(8px,5vw,20px);
+footer div{
+    padding: 1rem 5px;
+    font-size: clamp(8px,3vw,16px);
 }
 
 
 @media (max-width:768px) {
+    header .nav-link{
+        padding: 1rem 2rem;
+    }
     header .nav-link ul{
         display: none;
     }
@@ -337,13 +362,16 @@ footer .div{
         display: block;
        
     }
+    .section-profile{
+        margin-top: 64px;
+    }
     .section-apropos{
         padding: 50px 5px;
     }
 
-    .section-presentation .container{
+    /* .section-presentation .container{
         width: 80%;
-    }
+    } */
     .section-mon-travail .wrap{
         grid-template-columns: repeat(1,1fr);
     }
