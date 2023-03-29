@@ -143,9 +143,9 @@ header .nav-link ul li{
 
 .section-profile{
     position: relative;
-    /*
-    width: 100%;
-    height: auto; */
+    
+    width: 100vw;
+    height: auto; 
     background-image: url('assets/img-ia.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -156,8 +156,8 @@ header .nav-link ul li{
 .section-profile .profile{
     position: relative;
     display: flex;
-    /*
-    justify-content: center; */
+
+    justify-content: center; 
    
 }  
 .section-profile .profile img{
@@ -174,7 +174,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(210px,45VW,401px);
+    width: clamp(210px,40VW,401px);
     margin: 20px auto;
     overflow: hidden;
     border: 1px solid#33E7F5;
