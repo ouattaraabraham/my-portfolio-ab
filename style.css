@@ -140,17 +140,11 @@ header .nav-link ul li{
 .div-active{
     display: block;
 }
- /*
+
 .section-profile{
-    position: relative;
-    max-width: 100%;
-    height: 230px; 
-    background-image: url('assets/img-ia.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover ;
     margin-top: 78px;
-}  */
+    
+}  
 
 .section-profile .div-profile{
     position: relative;
@@ -333,6 +327,7 @@ main{
     color: var(--color-green);
 }
 .link{
+    display: none;
     color: var(--color-text2);
     
 }
@@ -407,7 +402,7 @@ footer div{
    
   }
   .section-profile .div-profile img{
-    max-height: 35vw;
+    max-height: 40vw;
 
 }
   .section-apropos .div-text .link-contacter .btn{
