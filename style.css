@@ -169,14 +169,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(210px,45VW,401px);
+    width: clamp(210px,50VW,401px);
     margin: 20px auto;
     overflow: hidden;
     border: 1px solid#33E7F5;
     border-radius: 7px;
     padding: 10px 0;
     font-style: italic;
-    font-size: clamp(16px,3vw,26px);
+    font-size: clamp(14px,3vw,26px);
     box-shadow: 1px 1px 5px #33E7F5;
     
    
@@ -351,7 +351,7 @@ footer div{
    
    
     .section-mon-travail{
-        padding: 6rem 30px 0;
+        padding: 6rem 5px 0;
     }
     .section-mon-travail .wrap .text{
         display: flex;
