@@ -169,7 +169,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(210px,40VW,401px);
+    width: clamp(210px,45VW,401px);
     margin: 20px auto;
     overflow: hidden;
     border: 1px solid#33E7F5;
@@ -191,31 +191,10 @@ main{
 .section-presentation .container h3{
     position: relative;
     text-decoration: underline;
-     /* display: flex;
-    align-items: center; */
   
-
 }
-/*
-.section-presentation .container h3::before{
-    content: '';
-    display: block;
-    width: 70px;
-    height: 1px;
-    background-color: aliceblue;
-
-}
-.section-presentation .container h3::after{
-    content: '';
-    display: block;
-    width: 70px;
-    height: 1px;
-    background-color: aliceblue;
-
-}  
-*/
 .section-apropos{
-    padding: 50px 30px;
+    padding: 105px 30px 0;
 }
 .section-apropos .div-text .link-contacter{
     margin-top: 2.9rem;
@@ -271,7 +250,7 @@ main{
     font-size: clamp(10px,3vw,18px);;
 }
 .section-mon-travail{
-    padding: 3.2rem 30px;
+    padding: 10rem 30px 0;
 }
 .section-mon-travail .div-mon-travail{
     margin-bottom: 70px;
@@ -327,7 +306,7 @@ main{
     color: var(--color-green);
 }
 .link{
-    display: none;
+   
     color: var(--color-text2);
     
 }
@@ -363,19 +342,16 @@ footer div{
         margin-top: 64px;
     }
     .section-apropos{
-        padding: 50px 5px;
+        padding: 76px 5px 0;
     }
 
-    /* .section-presentation .container{
-        width: 80%;
-    } */
     .section-mon-travail .wrap{
         grid-template-columns: repeat(1,1fr);
     }
    
    
     .section-mon-travail{
-        padding: 50px 0;
+        padding: 6rem 30px 0;
     }
     .section-mon-travail .wrap .text{
         display: flex;
@@ -402,7 +378,7 @@ footer div{
    
   }
   .section-profile .div-profile img{
-    max-height: 40vw;
+    max-height: 45vw;
 
 }
   .section-apropos .div-text .link-contacter .btn{
@@ -412,9 +388,6 @@ footer div{
     margin: 3rem auto;
   }
   
-  .section-mon-travail{
-    padding: 50px 0;
-}
 .div-img {
     padding: 5px 12px;
     margin: 0 auto;
