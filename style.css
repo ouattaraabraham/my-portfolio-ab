@@ -306,7 +306,7 @@ main{
     color: var(--color-green);
 }
 .link{
-   
+    font-size: clamp(8px,5vw,24px);
     color: var(--color-text2);
     
 }
