@@ -169,7 +169,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(210px,50VW,401px);
+    width: clamp(200px,45VW,401px);
     margin: 20px auto;
     overflow: hidden;
     border: 1px solid#33E7F5;
@@ -290,7 +290,9 @@ main{
 }
 .section-contacter .div-contact{
     padding-bottom: 10px;
-    font-size: clamp(8px,5vw,24px);
+    font-size: clamp(16px,3vw,18px);
+    /*
+    font-size: clamp(8px,5vw,24px); */
 }
 .section-contacter .div-contact img{
     position: relative;
@@ -306,7 +308,7 @@ main{
     color: var(--color-green);
 }
 .link{
-    font-size: clamp(8px,5vw,24px);
+   
     color: var(--color-text2);
     
 }
