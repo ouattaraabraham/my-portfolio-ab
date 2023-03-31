@@ -290,7 +290,7 @@ main{
 }
 .section-contacter .div-contact{
     padding-bottom: 10px;
-    font-size: clamp(16px,3vw,18px);
+    font-size: clamp(13px,3vw,18px);
     /*
     font-size: clamp(8px,5vw,24px); */
 }
