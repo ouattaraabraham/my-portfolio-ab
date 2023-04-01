@@ -324,6 +324,7 @@ footer{
    
 }
 footer div{
+    text-align: center;
     padding: 1rem 5px;
     font-size: clamp(8px,3vw,16px);
 }
