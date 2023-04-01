@@ -180,7 +180,7 @@ main{
     border-radius: 7px;
     padding: 10px 0;
     font-style: italic;
-    font-size: clamp(14px,3vw,26px);
+    font-size: clamp(16px,3vw,26px);
     box-shadow: 1px 1px 5px #33E7F5;
     
    
@@ -389,7 +389,7 @@ footer div{
 
 }
 .section-presentation .container{
-    width: clamp(200px,80VW,300px);
+    width: clamp(200px,70VW,300px);
 }
   .section-apropos .div-text .link-contacter .btn{
     padding: 0.6rem 1.9rem;
