@@ -146,57 +146,40 @@ header .nav-link ul li{
 }
 
 .section-profile{
-    margin-top: 78px;
+    margin-top: 200px;
+    padding: 0 30px;
     
 }  
-
-.section-profile .div-profile{
-    position: relative;
-    background-image: url('assets/img-ia.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover ;
-    display: flex;
-    justify-content: center; 
-   
-}  
-.section-profile .div-profile img{
-    width: 50%;
-
+.section-profile .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
 }
+.section-profile .container h1{
+    font-size: clamp(1.2em,5vw,2rem);
+    font-weight: bold;
+}
+.section-profile .container h3{
+    font-size: clamp(.8em,3vw,1.3rem);
+    margin-top: 8px;
+}
+.section-profile .container h3>span{
+    padding: 2px;
+    background: aliceblue;
+}
+.section-profile .container img{
+   width: clamp(70%,80vw,100%);
+   margin: auto;
+}
+
+/* ...... */
 main{
     width: 100%;
     padding: 0 10px;
 
 }
-.section-presentation .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: clamp(200px,45VW,401px);
-    margin: 50px auto 20px;
-    overflow: hidden;
-    border: 1px solid#33E7F5;
-    border-radius: 7px;
-    padding: 10px 0;
-    font-style: italic;
-    font-size: clamp(16px,3vw,26px);
-    box-shadow: 1px 1px 5px #33E7F5;
-    
-   
-}
-.section-presentation .container .presentation-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   line-height: 2.3;
 
-}
-.section-presentation .container h3{
-    position: relative;
-    text-decoration: underline;
-  
-}
 .section-apropos{
     padding: 105px 30px 0;
 }
@@ -345,8 +328,14 @@ footer div{
         display: block;
        
     }
-    .section-profile{
-        margin-top: 64px;
+    .section-profile {
+        margin-top: 120px;
+        padding: 0 10px;
+    }
+    .section-profile .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
     .section-apropos{
         padding: 76px 5px 0;
@@ -384,10 +373,6 @@ footer div{
     
    
   }
-  .section-profile .div-profile img{
-    max-height: 43vw;
-
-}
 .section-presentation .container{
     width: clamp(200px,70VW,300px);
 }
