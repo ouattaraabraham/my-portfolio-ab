@@ -162,7 +162,7 @@ header .nav-link ul li{
 }
 .section-profile .container h1{
     text-transform: uppercase;
-    font-size: clamp(1.2em,5vw,2.1rem);
+    font-size: clamp(1.2em,7vw,2.5rem);
 }
 .section-profile .container h2{
     font-size: clamp(.7em,3vw,1.5rem) ;
@@ -196,9 +196,6 @@ header .nav-link ul li{
 }
 .section-profile .container1 div p{
     font-size: clamp(.6rem,3vw,1rem);
-    border: 1px solid;
-    display: inline;
-    padding: 5px;
     text-transform: capitalize;
 
 }
