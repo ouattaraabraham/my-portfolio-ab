@@ -156,19 +156,29 @@ header .nav-link ul li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    text-align: center;
+}
+.section-profile .container .text{
+    
 }
 .section-profile .container h1{
-    font-size: clamp(1.2em,5vw,2rem);
-    font-weight: bold;
+    text-transform: uppercase;
+    font-size: clamp(1.2em,5vw,2.1rem);
+}
+.section-profile .container h2{
+    font-size: clamp(.7em,3vw,1.5rem) ;
+    margin: 8px 0;
 }
 .section-profile .container h3{
-    font-size: clamp(.8em,3vw,1.3rem);
-    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: clamp(.6em,2.5vw,1rem);
+    margin-top: 10px;
 }
 .section-profile .container h3>span{
-    padding: 2px;
-    background: aliceblue;
+    padding: 3px 6px;
+    margin: 3px;
+    border: 1px solid;
+    border-radius: 20px;
 }
 .section-profile .container img{
    width: 90%;
@@ -180,10 +190,16 @@ header .nav-link ul li{
     margin-top: 200px;
     text-align: center;
 }
-.section-profile .container1 div{
+.section-profile .container1 div .ligne{
+    text-align: center;
+
+}
+.section-profile .container1 div p{
+    font-size: clamp(.6rem,3vw,1rem);
     border: 1px solid;
-    border-radius: 50px;
-    padding: 5px 0;
+    display: inline;
+    padding: 5px;
+    text-transform: capitalize;
 
 }
 .section-profile .container1 img{
@@ -305,7 +321,7 @@ main{
     text-align: initial;
     background: #222f3a;
     padding: 20px;
-    box-shadow: -50px 16px teal;
+    box-shadow: -10px 10px 10px #124141;
 }
 
 .section-contacter{
