@@ -175,6 +175,13 @@ header .nav-link ul li{
    height: auto;
    margin: auto;
 }
+.section-profile .container1{
+    margin-top: 200px;
+    align-items: center;
+}
+.section-profile .container1 img{
+  width: clamp(200px,40vw,300px);
+}
 
 /* ...... */
 main{
@@ -339,6 +346,10 @@ footer div{
         display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+    .section-profile .container1{
+        margin-top: 100px;
+       
     }
     .section-apropos{
         padding: 76px 5px 0;
