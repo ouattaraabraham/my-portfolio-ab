@@ -146,11 +146,13 @@ header .nav-link ul li{
 }
 
 .section-profile{
+    position: relative;
     margin-top: 200px;
     padding: 0 30px;
     
 }  
 .section-profile .container{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -170,6 +172,7 @@ header .nav-link ul li{
 }
 .section-profile .container img{
    width: 90%;
+   height: auto;
    margin: auto;
 }
 
