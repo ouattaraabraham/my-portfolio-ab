@@ -169,7 +169,7 @@ header .nav-link ul li{
     background: aliceblue;
 }
 .section-profile .container img{
-   width: clamp(70%,80vw,100%);
+   width: 90%;
    margin: auto;
 }
 
