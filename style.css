@@ -302,6 +302,9 @@ main{
     position: relative;
     margin-top: 19rem;
 }
+.motivation .wrap h3{
+    margin-bottom: 10rem;
+}
 .motivation .wrap h2{
     display: inline;
 }
@@ -460,5 +463,8 @@ footer div span a {
 .motivation .wrap{
     position: relative;
     margin-top: 12rem;
+}
+.motivation .wrap h3{
+    margin-bottom:0;
 }
 }
