@@ -157,9 +157,7 @@ header .nav-link ul li{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.section-profile .container .text{
-    
-}
+
 .section-profile .container h1{
     text-transform: uppercase;
     font-size: clamp(1.2em,7vw,2.5rem);
@@ -168,13 +166,12 @@ header .nav-link ul li{
     font-size: clamp(.7em,3vw,1.5rem) ;
     margin: 8px 0;
 }
-.section-profile .container h3{
-    display: flex;
-    flex-wrap: wrap;
+.section-profile .container .div-span{
     font-size: clamp(.6em,2.5vw,1rem);
     margin-top: 10px;
 }
-.section-profile .container h3>span{
+.section-profile .container .div-span>span{
+    display: inline-block;
     padding: 3px 6px;
     margin: 3px;
     border: 1px solid;
@@ -185,23 +182,6 @@ header .nav-link ul li{
    height: auto;
    margin: auto;
 }
-.section-profile .container1{
-    position: relative;
-    margin-top: 200px;
-    text-align: center;
-}
-.section-profile .container1 div .ligne{
-    text-align: center;
-
-}
-.section-profile .container1 div p{
-    font-size: clamp(.6rem,3vw,1rem);
-    text-transform: capitalize;
-
-}
-.section-profile .container1 img{
-    width: 40%;
-}
 
 /* ...... */
 main{
@@ -211,7 +191,7 @@ main{
 }
 
 .section-apropos{
-    padding: 105px 30px 0;
+    padding: 12rem 30px 0px;
 }
 .section-apropos .div-text .link-contacter{
     margin-top: 2.9rem;
@@ -327,7 +307,7 @@ main{
 
 .section-contacter{
     max-width: 600px;
-    padding: 5rem 0;
+    padding: 5rem 0 2rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -363,6 +343,20 @@ main{
 .link:hover{
     font-weight: 900;
 }
+.last-element-main .wrap{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.last-element-main .wrap div img{
+    width: 20%;
+}
+.last-element-main p{
+    font-size: clamp(.6rem,3vw,1rem);
+    text-transform: capitalize;
+
+}
+
+
 footer{
     background-color: #27292b;
    
@@ -402,12 +396,12 @@ footer div span a {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    .section-profile .container1{
-        margin-top: 100px;
-       
+    .section-profile .container .text{
+        text-align: center;
+        
     }
     .section-apropos{
-        padding: 76px 5px 0;
+        padding: 11rem 5px 0px;
     }
 
     .section-mon-travail .wrap{
@@ -467,4 +461,8 @@ footer div span a {
 .motivation .wrap h3{
     margin-bottom:0;
 }
+.last-element-main .wrap div img{
+    width: 25%;
+}
+
 }
