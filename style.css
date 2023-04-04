@@ -315,10 +315,11 @@ main{
 }
 .motivation .wrap  .text{
     position: relative;
+    line-height: 1.6;
     text-align: initial;
-    background: #222f3a;
+    background:#193E75;
     padding: 20px;
-    box-shadow: -10px 10px 10px #124141;
+    box-shadow: 20px -20px #1241419c;
 }
 
 .section-contacter{
@@ -367,6 +368,10 @@ footer div{
     text-align: center;
     padding: 1rem 5px;
     font-size: clamp(8px,3vw,16px);
+}
+footer div span a {
+    text-decoration: underline;
+    color: var(--color-text2);
 }
 
 
