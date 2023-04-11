@@ -343,6 +343,13 @@ main{
 .link:hover{
     font-weight: 900;
 }
+.sociaux {
+    display: flex;
+    justify-content: center;
+}
+.sociaux div{
+    margin: 20px 10px;
+}
 
 footer{
     background-color: #27292b;
